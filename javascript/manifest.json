@@ -1,0 +1,21 @@
+{
+  "name": "ToDo PouchDB + Pure JS",
+  "description": "Pure Javascript Chrome ToDo extension w/ usage of PouchDB",
+  "manifest_version": 2,
+  "version": "1.0",
+  "background": {
+    "scripts": [
+      "./dist/js/background.js"
+    ]
+  },
+  "author": "Roman Kozin",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "unlimitedStorage"
+  ],
+  "browser_action": {
+    "default_popup": "./dist/popup/index.html"
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PouchDB ToDo List</title>
+
+    <link rel="stylesheet" href="./css/popup.css">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <label for="todo-title">
+            <span></span>
+            <input type="text" id="todo-title" placeholder="ToDo Item title">
+        </label>
+    </div>
+    <div class="row">
+        <label for="todo-completed">
+            <input type="checkbox" id="todo-completed">
+        </label>
+    </div>
+    <div class="row">
+        <label for="todo-add-btn">
+            <button id="todo-add-btn">Add to List</button>
+        </label>
+    </div>
+</div>
+
+<table class="full-width">
+    <thead>
+    <tr>
+        <td>Completed</td>
+        <td>Title</td>
+        <td colspan="2"></td>
+    </tr>
+    </thead>
+    <tbody id="todo-table-body"></tbody>
+</table>
+
+<script src="./popup.js"></script>
+<script>
+    window.onload = function () {
+        popup._f.initDB();
+    };
+</script>
+
+</body>
+</html>

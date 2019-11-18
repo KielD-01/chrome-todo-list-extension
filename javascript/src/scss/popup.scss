@@ -1,0 +1,22 @@
+html {
+  min-height: 320px !important;
+  min-width: 480px !important;
+}
+
+div {
+  &.container {
+    width: 100%;
+    margin: 4px !important;
+    display: flex;
+
+    > div.row {
+      display: inline-flex;
+    }
+  }
+}
+
+table {
+  &.full-width {
+    width: 100% !important;
+  }
+}

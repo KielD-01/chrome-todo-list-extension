@@ -1,0 +1,23 @@
+{
+  "name": "javascript-todo-pouchdb",
+  "version": "1.0.0",
+  "description": "Javascript PouchDB ToDo List",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js --output-library-target commonjs"
+  },
+  "author": "Roman Kozin",
+  "license": "MIT",
+  "dependencies": {
+    "pouchdb": "^7.1.1",
+    "rollup": "^1.26.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.5",
+    "extract-loader": "^3.1.0",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
