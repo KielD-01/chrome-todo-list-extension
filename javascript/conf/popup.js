@@ -28,6 +28,10 @@ module.exports = {
                 from: Path.resolve(__dirname, '../src/popup/index.html'),
                 to: Path.resolve(__dirname, '../dist/popup/index.html')
             },
+            {
+                from: Path.resolve(__dirname, '../manifest.json'),
+                to: Path.resolve(__dirname, '../dist/manifest.json')
+            },
         ]),
     ]
 };
