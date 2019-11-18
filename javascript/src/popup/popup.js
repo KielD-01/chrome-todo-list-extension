@@ -1,3 +1,4 @@
+require('html-loader!./index.html');
 let popup = {
     _f: {},
     data: {
